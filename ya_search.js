@@ -11,6 +11,7 @@ var yasearch = function(form){
 
         // Кнопка начала поиска
         var yab = s('.ya-site-form__submit');
+        s.trace(yab);
 
         // Обработчик отправки формы сайта
         form.submit( function()
@@ -28,6 +29,7 @@ var yasearch = function(form){
         // Обработчик ввода данных в поле ввода
         if( yaf ) sf.keyup(function( o, opt,e )
         {
+            s.trace('!!!!!!!!');
             // Нажали enter - все убираем
             if (e.keyCode == 13){
                 yaf.val( sf.val() );
